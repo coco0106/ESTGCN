@@ -1,0 +1,26 @@
+---
+Data:
+  adj_filename: data\sensor_graph\adj_EMS.csv
+  graph_signal_matrix_filename : data\EMS
+  num_of_vertices : 145
+  points_per_hour : 12
+  num_for_predict : 12
+  len_input : 3
+  dataset_name : EMS
+
+Training:
+  ctx : 0
+  in_channels : 1
+  nb_block : 2
+  K : 3
+  nb_chev_filter : 64
+  nb_time_filter : 64
+  batch_size : 192
+  model_name : astgcn_r
+  dataset_name : EMS
+  num_of_weeks : 0
+  num_of_days : 0
+  num_of_hours : 1
+  start_epoch : 0
+  epochs : 80
+  learning_rate : 0.001
